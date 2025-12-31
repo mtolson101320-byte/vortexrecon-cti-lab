@@ -1,0 +1,9 @@
+ai:
+  engine: "rule-based-v1"
+reporting:
+  output_dir: "output/reports"
+integrations:
+  intelowl:
+    enabled: false
+  harpoon:
+    enabled: false
