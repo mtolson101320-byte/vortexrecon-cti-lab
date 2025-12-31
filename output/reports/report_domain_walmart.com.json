@@ -1,0 +1,55 @@
+{
+  "enrichment": {
+    "recon": {
+      "input": {
+        "value": "walmart.com",
+        "ioc_type": "domain"
+      },
+      "basic_info": {
+        "dns": {
+          "hostname": "walmart.com",
+          "aliases": [],
+          "addresses": [
+            "23.215.56.189"
+          ]
+        }
+      },
+      "osint_sources": {
+        "note": "Integrate Harpoon/IntelOwl/Shodan/Censys via modules/."
+      },
+      "errors": [],
+      "timestamp": "2025-12-31T17:24:36Z"
+    },
+    "reputation": {
+      "engine": "local-placeholder",
+      "classification": "unknown",
+      "details": "Wire IntelOwl/VirusTotal/AbuseIPDB here."
+    },
+    "tags": [
+      "domain"
+    ],
+    "risk_score": 15,
+    "enrichment_sources": {
+      "intelowl": {
+        "enabled": false
+      }
+    },
+    "errors": [],
+    "timestamp": "2025-12-31T17:24:36Z"
+  },
+  "ai_summary": "IOC: walmart.com (domain)\nRisk score: 15\nReputation engine: local-placeholder\n\nAssessment:\n- Locally generated assessment (rule-based).\n- Wire an LLM here for richer analysis.",
+  "ai_findings": {
+    "suspicion_reasons": [
+      "Network IOCs may be C2 / staging infra."
+    ],
+    "recommended_next_steps": [
+      "Check DNS/proxy/firewall logs for hits."
+    ]
+  },
+  "mitre_tags": [
+    "TA0043: Reconnaissance",
+    "TA0001: Initial Access"
+  ],
+  "priority": "medium",
+  "timestamp": "2025-12-31T17:24:36Z"
+}
