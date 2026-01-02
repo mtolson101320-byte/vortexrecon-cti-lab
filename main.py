@@ -1,6 +1,9 @@
 import argparse
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from core.recon import run_recon
 from core.enrich import enrich_recon
 from core.ai_engine import ThreatAIEngine
